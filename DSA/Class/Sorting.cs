@@ -6,7 +6,7 @@ namespace DSA.Class
 {
     class Sorting
     {
-        public void AssendingSorting(int[] arr)
+        public void AssendingSorting(int[] arr)//selection
         {
             int len = arr.Length;
             for (int i = 0; i < len - 1; i++)

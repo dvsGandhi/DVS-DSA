@@ -23,5 +23,16 @@ namespace DSA.Class
             }
             return 0;
         }
+
+        public int TotalSum(int[] arr)//linear
+        {
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum +=  arr[i];
+
+            }
+            return sum;
+        }
     }
 }
