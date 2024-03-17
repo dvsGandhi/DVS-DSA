@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+
+*/obj/*
+*/bin/*
+*/*.csproj
+.vs/*
+/build/
+*.suo
+bin/
+obj/
+Debug/
+Release/
