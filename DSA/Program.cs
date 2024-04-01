@@ -30,8 +30,13 @@ namespace DSA
             #endregion
 
             #region SubArray
-            SubArray s = new SubArray();
-            s.PrintSubArray(new int[] {1,2,3,4});
+            //SubArray s = new SubArray();
+            //s.PrintSubArray(new int[] {1,2,3,4});
+            #endregion
+
+            #region ReverseArray
+            twoDarray tda = new twoDarray();
+            tda.ReverseArray();
             #endregion
         }
     }
