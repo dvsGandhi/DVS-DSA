@@ -11,12 +11,12 @@ namespace DSA.Class
             List<int> list = new List<int>();
             int cnt = 0;
             int l = arr1.Length;
-            for (int i = 0; i < l; i++)
+            for (int start = 0; start < l; start++)
             {
-                for (int j = i; j < l; j++)
+                for (int end = start; end < l; end++)
                 {
-                    for(int k = i; k <= j;k++)
-                        Console.Write(arr1[k] + " ");
+                    for(int element = start; element <= end;element++)
+                        Console.Write(arr1[element] + " ");
                     Console.WriteLine();
                 }
                 cnt++;
