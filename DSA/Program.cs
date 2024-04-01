@@ -25,9 +25,13 @@ namespace DSA
             #endregion
 
             #region 2dArray
-            twoDarray twoDarray = new twoDarray();
-            twoDarray.matrix();
+            //twoDarray twoDarray = new twoDarray();
+            //twoDarray.matrix();
+            #endregion
 
+            #region SubArray
+            SubArray s = new SubArray();
+            s.PrintSubArray(new int[] {1,2,3,4});
             #endregion
         }
     }
