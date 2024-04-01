@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = DSA
-build_property.ProjectDir = H:\GitHub\DSA\DSA\
+build_property.ProjectDir = D:\Git\DVS-DSA\DSA\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
