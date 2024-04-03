@@ -35,8 +35,13 @@ namespace DSA
             #endregion
 
             #region ReverseArray
-            twoDarray tda = new twoDarray();
-            tda.ReverseArray();
+            //twoDarray tda = new twoDarray();
+            //tda.ReverseArray();
+            #endregion
+
+            #region TransportArray
+            twoDarray tw = new twoDarray();
+            tw.TransposeArray();
             #endregion
         }
     }
