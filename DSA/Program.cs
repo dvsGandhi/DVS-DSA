@@ -40,8 +40,13 @@ namespace DSA
             #endregion
 
             #region TransportArray
+            //twoDarray tw = new twoDarray();
+            //tw.TransposeArray();
+            #endregion
+
+            #region TransportArray
             twoDarray tw = new twoDarray();
-            tw.TransposeArray();
+            tw.Rotate90DegreeClockWise();
             #endregion
         }
     }
