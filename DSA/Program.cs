@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.ConstrainedExecution;
 using DSA.Class;
 
 namespace DSA
@@ -8,8 +9,8 @@ namespace DSA
         static void Main(string[] args)
         {
             #region searching,sorting
-            //Sorting s1 = new Sorting();
-            Searching ser = new Searching();
+            Sorting s1 = new Sorting();
+            //Searching ser = new Searching();
             int[] arr = { 10, 5, -25, -7, 19, -10, -60, 30, 55, -40 };
             //Console.WriteLine("max number = "+ ser.FindMaxNumber(arr));
             //Console.WriteLine("Sum of total number = "+ ser.TotalSum(arr));
@@ -22,8 +23,9 @@ namespace DSA
             //Console.WriteLine("descending Order");
             //s1.DescendingSorting(arr1);
             //s1.dispArray(arr1);
-            Console.WriteLine(ser.MinMaxNumberSum(arr));
+            //Console.WriteLine(ser.MinMaxNumberSum(arr));
 
+            s1.SelectionSort(arr);
             #endregion
 
             #region 2dArray
