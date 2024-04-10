@@ -71,7 +71,7 @@ namespace DSA.Class
             int i, j;
             for (i = 0; i < n / 2; i++)
             {
-                for(j=i; j < n -i - 1; j++)
+                for (j = i; j < n - i - 1; j++)
                 {
                     int temp = matrix[i, j];
                     int temp2 = n - 1 - j;
@@ -90,7 +90,7 @@ namespace DSA.Class
             int n = matrix.GetLength(0);
             int row, col;
             int row2 = n - 1;
-            for(row = 0; row < n/2; row++)
+            for (row = 0; row < n / 2; row++)
             {
                 int col2 = matrix.GetLength(1) - 1;
                 for (col = 0; col < matrix.GetLength(1); col++)
@@ -104,12 +104,30 @@ namespace DSA.Class
             }
             printMatrix(matrix);
         }
+
+        public void Rotate270DegreeClockWise()
+        {
+            int[,] matrix = new int[,] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }};
+            int oldMatrixRow = matrix.GetLength(0);
+            int oldMatrixCol = matrix.GetLength(1);
+            int[,] newMatrix = new int[oldMatrixCol,oldMatrixRow];
+            for (int row = 0; row < oldMatrixRow;row++)
+            {
+                int newMatrixRow = oldMatrixCol-1;
+                for (int col = 0; col < oldMatrixCol;col++)
+                {
+                    newMatrix[newMatrixRow,row] = matrix[row, col];
+                    newMatrixRow--;
+                }
+            }
+            printMatrix(newMatrix);
+        }
         static void printMatrix(int[,] arr)
         {
             int N = arr.GetLength(0);
             for (int i = 0; i < N; i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < arr.GetLength(1); j++)
                     Console.Write(arr[i, j] + " ");
                 Console.Write("\n");
             }
