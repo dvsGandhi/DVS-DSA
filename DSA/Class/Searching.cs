@@ -19,6 +19,7 @@ namespace DSA.Class
                         maxNumber = j;
                     }
                 }
+                Console.WriteLine("max numbeer = "+arr[maxNumber]);
                 return arr[maxNumber];
             }
             return 0;
@@ -33,6 +34,30 @@ namespace DSA.Class
 
             }
             return sum;
+        }
+
+        public int FindMinNumber(int[] arr)
+        {
+            int len = arr.Length;
+            for (int i = 0; i < len - 1; i++)
+            {
+                int minNumber = i;
+                for (int j = i + 1; j < len; j++)
+                {
+                    if (arr[j] < arr[minNumber])
+                    {
+                        minNumber = j;
+                    }
+                }
+                Console.WriteLine("Min Number = "+arr[minNumber]);
+                return arr[minNumber];
+            }
+            return 0;
+        }
+
+        public int MinMaxNumberSum(int[] arr)
+        {
+            return TotalSum(new int[] {FindMinNumber(arr),FindMaxNumber(arr)}); 
         }
     }
 }

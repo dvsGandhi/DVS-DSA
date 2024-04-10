@@ -9,8 +9,8 @@ namespace DSA
         {
             #region searching,sorting
             //Sorting s1 = new Sorting();
-            //Searching ser = new Searching();
-            //int[] arr = { 10, 5, -25, -7, 19, -10, -60, 30, 55, -40 };
+            Searching ser = new Searching();
+            int[] arr = { 10, 5, -25, -7, 19, -10, -60, 30, 55, -40 };
             //Console.WriteLine("max number = "+ ser.FindMaxNumber(arr));
             //Console.WriteLine("Sum of total number = "+ ser.TotalSum(arr));
 
@@ -22,6 +22,8 @@ namespace DSA
             //Console.WriteLine("descending Order");
             //s1.DescendingSorting(arr1);
             //s1.dispArray(arr1);
+            Console.WriteLine(ser.MinMaxNumberSum(arr));
+
             #endregion
 
             #region 2dArray
@@ -45,10 +47,10 @@ namespace DSA
             #endregion
 
             #region TransportArray
-            twoDarray tw = new twoDarray();
-            //tw.Rotate90DegreeClockWise();
-            //tw.Rotate180DegreeClockWise();
-            tw.Rotate270DegreeClockWise();
+            //twoDarray tw = new twoDarray();
+            ////tw.Rotate90DegreeClockWise();
+            ////tw.Rotate180DegreeClockWise();
+            //tw.Rotate270DegreeClockWise();
             #endregion
         }
     }
