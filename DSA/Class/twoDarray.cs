@@ -83,6 +83,27 @@ namespace DSA.Class
             }
             printMatrix(matrix);
         }
+
+        public void Rotate180DegreeClockWise()
+        {
+            int[,] matrix = new int[,] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+            int n = matrix.GetLength(0);
+            int row, col;
+            int row2 = n - 1;
+            for(row = 0; row < n/2; row++)
+            {
+                int col2 = matrix.GetLength(1) - 1;
+                for (col = 0; col < matrix.GetLength(1); col++)
+                {
+                    int temp = matrix[row, col];
+                    matrix[row, col] = matrix[row2, col2];
+                    matrix[row2, col2] = temp;
+                    col2--;
+                }
+                row2--;
+            }
+            printMatrix(matrix);
+        }
         static void printMatrix(int[,] arr)
         {
             int N = arr.GetLength(0);

@@ -46,7 +46,8 @@ namespace DSA
 
             #region TransportArray
             twoDarray tw = new twoDarray();
-            tw.Rotate90DegreeClockWise();
+            //tw.Rotate90DegreeClockWise();
+            tw.Rotate180DegreeClockWise();
             #endregion
         }
     }
