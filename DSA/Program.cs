@@ -10,7 +10,7 @@ namespace DSA
         {
             #region searching,sorting
             Sorting s1 = new Sorting();
-            //Searching ser = new Searching();
+            Searching ser = new Searching();
             int[] arr = { 10, 5, -25, -7, 19, -10, -60, 30, 55, -40 };
             //Console.WriteLine("max number = "+ ser.FindMaxNumber(arr));
             //Console.WriteLine("Sum of total number = "+ ser.TotalSum(arr));
@@ -25,7 +25,7 @@ namespace DSA
             //s1.dispArray(arr1);
             //Console.WriteLine(ser.MinMaxNumberSum(arr));
 
-            s1.SelectionSort(arr);
+            //s1.SelectionSort(arr);
             #endregion
 
             #region 2dArray
@@ -53,6 +53,10 @@ namespace DSA
             ////tw.Rotate90DegreeClockWise();
             ////tw.Rotate180DegreeClockWise();
             //tw.Rotate270DegreeClockWise();
+            #endregion
+
+            #region CompareVersion
+            Console.WriteLine(ser.CompareVersionNumbers("0.1", "1.1"));
             #endregion
         }
     }

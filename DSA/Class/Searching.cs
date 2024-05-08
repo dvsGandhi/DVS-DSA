@@ -59,5 +59,19 @@ namespace DSA.Class
         {
             return TotalSum(new int[] {FindMinNumber(arr),FindMaxNumber(arr)}); 
         }
+
+        public int CompareVersionNumbers(string v1,string v2)
+        {
+            var version1 = new Version(v1);
+            var version2 = new Version(v2);
+
+            var result = version1.CompareTo(version2);
+            if (result > 0)
+                return 1;
+            else if (result < 0)
+                return -1;
+            else
+                return 0;
+        }
     }
 }
