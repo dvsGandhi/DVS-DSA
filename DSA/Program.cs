@@ -60,7 +60,11 @@ namespace DSA
             #endregion
 
             #region ReversePrefixString
-            s1.ReversePrefixOfWord("abcd", "z");
+            //s1.ReversePrefixOfWord("abcd", "z");
+            #endregion
+
+            #region LengthOfLastWord
+            Console.WriteLine(ser.LengthofLastWord("hello world"));
             #endregion
         }
     }
