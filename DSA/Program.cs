@@ -56,7 +56,11 @@ namespace DSA
             #endregion
 
             #region CompareVersion
-            Console.WriteLine(ser.CompareVersionNumbers("0.1", "1.1"));
+            //Console.WriteLine(ser.CompareVersionNumbers("0.1", "1.1"));
+            #endregion
+
+            #region ReversePrefixString
+            s1.ReversePrefixOfWord("abcd", "z");
             #endregion
         }
     }

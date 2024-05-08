@@ -61,13 +61,34 @@ namespace DSA.Class
                 for (int j = i + 1; j < len; j++)
                 {
                     if (arr[j] < arr[min_ind])
-                        min_ind = j; 
+                        min_ind = j;
                 }
                 int temp = arr[min_ind];
                 arr[min_ind] = arr[i];
                 arr[i] = temp;
             }
             dispArray(arr);
+        }
+
+        //Reverse Prefix of Word(#2000)
+        //Input: word = "abcdefd", ch = "d"
+        //Output: "dcbaefd"
+        public string ReversePrefixOfWord(string word, string ch)
+        {
+            string op = ch;
+            string[] newwords = word.Split(ch);
+            if (newwords.Length > 1)
+            {
+                int count = newwords[0].Length - 1;
+                for (int i = count; i >= 0; i--)
+                {
+                    op += newwords[0][i];
+                }
+                op += newwords[1];
+                return op;
+            }
+            else
+                return word;
         }
     }
 }
