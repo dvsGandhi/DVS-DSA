@@ -73,5 +73,11 @@ namespace DSA.Class
             else
                 return 0;
         }
+        public int LengthofLastWord(string word)
+        {
+            word = word.Trim();
+            string[] newword = word.Split(' ');
+            return newword[newword.Length-1].Length;
+        }
     }
 }
